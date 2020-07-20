@@ -2,6 +2,9 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+const auth_token = process.env.REACT_APP_AUTH_TOKEN;
+const secret_auth_token = process.env.REACT_APP_SECRET_AUTH_TOKEN;
+
 function App() {
   return (
     <div className="App">
