@@ -5,6 +5,24 @@ import './App.css';
 const auth_token = process.env.REACT_APP_AUTH_TOKEN;
 const secret_auth_token = process.env.REACT_APP_SECRET_AUTH_TOKEN;
 
+var request = require('request-promise');
+require('dotnev'),config();
+
+let options = {
+  method: 'GET',
+  uri: 'https://www.goodreads.com/review/list/${process.env.USER_ID}.xml`,
+  qs: {
+      key: process.env.REACT_APP_AUTH_TOKEN,
+      v: process.env.VERSION,
+      shelf: process.env.SHELF,
+      per_page: process.env.PER_PAGE
+  }
+}
+
+request(options).then((shelf) => {
+    console.log(shelf);
+}).catch(err => console.error(err));
+
 function App() {
   return (
     <div className="App">
