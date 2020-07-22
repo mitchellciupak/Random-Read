@@ -3,7 +3,7 @@
     <div class="container">
       <div class="columns">
         <div class="column"></div>
-        <div class="column is-one-third">
+        <div class="column is-one-quarter">
           <div class="control">
             <input
               :class="inputClasses"

@@ -76,7 +76,7 @@ export default {
       return this.$store.getters['books/hasBook'];
     },
     buttonText() {
-      return this.hasBook ? 'Pick another Book' : 'Find my next Book';
+      return this.hasBook ? 'Nah, another book' : 'Find my next book';
     },
     isLoading() {
       return this.$store.getters['books/isLoading'];
