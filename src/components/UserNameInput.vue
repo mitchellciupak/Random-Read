@@ -14,7 +14,7 @@
               @focus="resetError"
             />
             <p class="help" v-if="!hasError">
-              Your UserID can be found by clicking on <b>profile</b> and copying the digits at the end of <b>https://www.goodreads.com/user/show/'</b> 
+              Your UserID can be found by clicking on <b>profile</b> i.e. 'https://www.goodreads.com/user/show/<b>82326805</b>'
             </p>
             <p class="help has-text-danger" v-else>{{ error }}</p>
           </div>

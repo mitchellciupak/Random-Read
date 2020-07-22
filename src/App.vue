@@ -17,7 +17,7 @@
                     Select a Random Read
                   </h1>
                   <h2 class="subtitle">
-                    Helps you pick you next read from Goodreads.
+                    Helps you pick you next book from Goodreads.
                   </h2>
                 </div>
               </div>
