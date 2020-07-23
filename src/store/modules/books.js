@@ -62,7 +62,7 @@ const actions = {
             } catch (err) {
               console.error(err);
               commit('setCurrentBook', undefined);
-              commit('setError', 'Could not load books. Please try again.');
+              commit('setError', 'Could not load books. Please try again. Please note that mobile is not supported at this time');
             }
           });
       })
